@@ -5,14 +5,14 @@ import 'package:bookly_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 
-class SplashViewbody extends StatefulWidget {
-  const SplashViewbody({super.key});
+class SplashViewBody extends StatefulWidget {
+  const SplashViewBody({super.key});
 
   @override
-  State<SplashViewbody> createState() => _SplashViewbodyState();
+  State<SplashViewBody> createState() => _SplashViewBodyState();
 }
 
-class _SplashViewbodyState extends State<SplashViewbody>
+class _SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<Offset> slidingTextAnimation;
