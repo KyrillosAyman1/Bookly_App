@@ -5,7 +5,6 @@ import 'package:bookly_app/Features/home/presentation/views/widgets/book_rating.
 import 'package:bookly_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
@@ -63,7 +62,7 @@ class BestSellerListViewItem extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    const BookRating(),
+                    const BookRating( ),
                   ],
                 ),
               ],
