@@ -4,7 +4,6 @@ import 'package:bookly_app/Features/splash/presentation/views/widgets/sliding_te
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
 
@@ -68,9 +67,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome() {
     Future.delayed(const Duration(seconds: 4), () {
-
-       // ignore: use_build_context_synchronously
-       GoRouter.of(context).pushReplacement(AppRouter.kHomeView);
+      // ignore: use_build_context_synchronously
+      GoRouter.of(context).pushReplacement(AppRouter.kHomeView);
       // Get.to(
       //   () => const HomeView(),
       //   transition: Transition.fade,
