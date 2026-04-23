@@ -30,7 +30,9 @@ class NewestListView extends StatelessWidget {
           );
         } else {
           return const SliverToBoxAdapter(
-            child: CustomLoadingIndicator()
+            child: CustomLoadingIndicator(
+              type: LoadingIndicatorType.newestBooks,
+            ),
           );
         }
       },

@@ -33,7 +33,9 @@ class FeaturedBooksListView extends StatelessWidget {
         } else if (state is FeaturedBooksFailure) {
           return CustomErrorWidget(errorMessage: state.errorMessage);
         } else {
-          return const CustomLoadingIndicator();
+          return const CustomLoadingIndicator(
+            type: LoadingIndicatorType.featuredBooks,
+          );
         }
       },
     );
