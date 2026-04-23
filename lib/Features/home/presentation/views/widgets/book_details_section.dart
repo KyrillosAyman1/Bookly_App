@@ -15,7 +15,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .18),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imageUrl: "https://www.istockphoto.com/photos/highway-night",
+          ),
         ),
         const SizedBox(height: 24),
         Text(
