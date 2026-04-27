@@ -1,6 +1,5 @@
 import 'package:bookly_app/Core/utils/app_router.dart';
 import 'package:bookly_app/Core/utils/app_styles.dart';
-import 'package:bookly_app/Core/utils/assets_data.dart';
 import 'package:bookly_app/Features/home/data/models/book_model/book_model.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/custom_book_image.dart';
@@ -46,6 +45,8 @@ class BookListViewItem extends StatelessWidget {
                 Text(
                   bookModel.volumeInfo?.authors?[0] ?? "",
                   style: AppStyles.textStyle14,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 3),
                 Row(
@@ -54,7 +55,7 @@ class BookListViewItem extends StatelessWidget {
                       "Free",
                       style: AppStyles.textStyle18.copyWith(
                         fontWeight: FontWeight.bold,
-                        color: Colors.green,
+                        color: const Color.fromARGB(255, 200, 251, 201),
                       ),
                     ),
                     const Spacer(),

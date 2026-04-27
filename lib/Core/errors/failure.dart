@@ -37,8 +37,8 @@ class ServerFailure extends Failure {
           return ServerFailure("No Internet Connection, Please check your connection!");
         }
           return ServerFailure("Connection error, Please check your connection!");
-      default:
-        return ServerFailure("Something went wrong, Please try again!");
+      // default:
+      //   return ServerFailure("Something went wrong, Please try again!");
     }
   }
 

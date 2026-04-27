@@ -53,7 +53,7 @@ class _FeaturedBooksLoading extends StatelessWidget {
           child: _ShimmerContainer(borderRadius: 16),
         ),
         separatorBuilder: (context, index) => const SizedBox(width: 12),
-        itemCount: 6,
+        itemCount: 10,
       ),
     );
   }
@@ -68,7 +68,7 @@ class _NewestBooksLoading extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: List.generate(
-          5,
+          10,
           (index) => const Padding(
             padding: EdgeInsets.symmetric(vertical: 10),
             child: _NewestBookItemShimmer(),
@@ -114,7 +114,7 @@ class _NewestBookInfoShimmer extends StatelessWidget {
          _ShimmerContainer(width: 110, height: 14, borderRadius: 8),
          Spacer(),
         Row(
-          children: const [
+          children:  [
             _ShimmerContainer(width: 56, height: 18, borderRadius: 20),
             Spacer(),
             _ShimmerContainer(width: 70, height: 18, borderRadius: 20),
